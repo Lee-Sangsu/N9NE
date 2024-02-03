@@ -17,8 +17,8 @@ export default function Home() {
           >
             By{" "}
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
+              src="/full-icon.svg"
+              alt="Nine Logo"
               className={styles.vercelLogo}
               width={100}
               height={24}
@@ -31,8 +31,8 @@ export default function Home() {
       <div className={styles.center}>
         <Image
           className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
+          src="/full-icon.svg"
+          alt="Nine Logo"
           width={180}
           height={37}
           priority
