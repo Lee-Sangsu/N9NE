@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
+// import Header from "@/components/header";
 
-const inter = Inter({ subsets: ["latin"] });
+
+const roboto = Roboto({ 
+  weight: ['400', '700'],
+  subsets: ['latin'] 
+});
 
 export const metadata: Metadata = {
   title: "N9NE T.C.",
@@ -15,8 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en-US">
+      {/* <Header /> */}
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }
