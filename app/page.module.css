@@ -3,29 +3,30 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding-top: 3rem;
   min-height: 100vh;
 }
 
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: sta;
+  align-items: center;
   font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
+  padding: 24px 6vw;
+  width: 100vw;
   z-index: 2;
   font-family: var(--font-mono);
 }
 
-.description a {
+.header a {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }
 
-.description p {
+.header p {
   position: relative;
   margin: 0;
   padding: 1rem;
@@ -211,7 +212,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .vercelLogo {
+  .n9neLogo {
     filter: invert(1);
   }
 

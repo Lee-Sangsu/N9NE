@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Header />
+      {/* <Header /> */}
 
       <div className={styles.center}>
         <Image
