@@ -1,5 +1,6 @@
 import styles from "../app/page.module.css";
 import Image from "next/image";
+import ConsultBTN from "./Button/consult_button";
 
 export default function Header() {
     return ( <div className={styles.header}>
@@ -14,16 +15,19 @@ export default function Header() {
               alt="Nine Logo"
               className={styles.n9neLogo}
               width={100}
-              height={24}
+              height={48}
               priority
-            /> team company
+            />
           </a>
         </div>
-        <div>
-          <p>Services</p>
-          <p>Portfolio</p>
-          <p>About Us</p>
-        </div>
+        <ul className={styles.nav_menu}>
+          <li>Services</li>
+          <li>Portfolio</li>
+          <li>About Us</li>
+        </ul>
+
+        <ConsultBTN />
+        
         {/* <p>
         Would your&nbsp;
           <code className={styles.code}>food</code>&nbsp;
