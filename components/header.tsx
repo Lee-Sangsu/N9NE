@@ -1,8 +1,13 @@
+"use client";
+
 import styles from "../app/page.module.css";
 import Image from "next/image";
 import ConsultBTN from "./Button/consult_button";
+// import { useEffect, useState } from "react";
+
 
 export default function Header() {
+
     return ( <div className={styles.header}>
         <div>
           <a

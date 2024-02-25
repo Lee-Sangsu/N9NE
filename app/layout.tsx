@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
+// import { useEffect, useState } from "react";
 
 
 const roboto = Roboto({ 
@@ -19,6 +20,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // const [dark, setDark] = useState<Boolean>(false);
+  
+  // useEffect(() => {
+  //   if (window.matchMedia('prefers-color-scheme: dark')) {
+  //     setDark(true)
+  //   } else {
+  //     setDark(false);
+  //   }
+  // }, [])
   return (
     <html lang="en-US">
       <body className={roboto.className}>
