@@ -18,8 +18,8 @@ export default function Home() {
           className={styles.rect}
           src="/images/rounded-rect.svg"
           alt="Nine decor 2"
-          width={150}
-          height={300}
+          width={250}
+          height={400}
         />
 
       <div className={styles.index_container}>
@@ -29,7 +29,7 @@ export default function Home() {
       </div>
 
       <div className={styles.statement}>
-        <h2>We transform We innovate we create</h2>
+        <h1>We transform<br/>We innovate<br/>We create</h1>
         <p>
         We are N9NE, a creative and dynamic agency made up of a team of designers, communicators, strategists, and leaders.
         With a collective and multicultural approach, we enhance our design process to adapt it to the unique needs of each client, creating memorable and meaningful brands.

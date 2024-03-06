@@ -3,6 +3,7 @@
 import styles from "../app/page.module.css";
 import Image from "next/image";
 import ConsultBTN from "./Button/consult_button";
+import Link from "next/link";
 // import { useEffect, useState } from "react";
 
 
@@ -10,20 +11,16 @@ export default function Header() {
 
     return ( <div className={styles.header}>
         <div>
-          <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href="/">
             <Image
-              src="/full-icon.svg"
+              src="/light-icon.svg"
               alt="Nine Logo"
               className={styles.n9neLogo}
               width={100}
               height={48}
               priority
             />
-          </a>
+          </Link>
         </div>
         <ul className={styles.nav_menu}>
           <li>Services</li>

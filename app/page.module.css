@@ -67,7 +67,7 @@
 .star {
   position: absolute;
   left: var(--container-horizontal-padding);
-  top: 12dvh;
+  top: 18dvh;
 }
 
 .rect {
@@ -78,12 +78,21 @@
 
 .statement { 
   display: flex;
-  width: var(--max-width);
+  width: 100vw;
+  margin: 8dvh 0;
+  padding: 2em 8vw;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
+  background-color: rgb(var(--foreground-rgb));
+  color: rgb(var(--background-end-rgb));
 }
+
+.statement h1 {
+  color: rgb(var(--background-end-rgb));
+}
+
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
@@ -133,22 +142,24 @@
   text-align: center;
 }
 
-.index_container::before {
+/* .index_container::before {
   background: var(--secondary-glow);
   border-radius: 50%;
   width: var(--max-width);
   height: 360px;
   margin-left: -400px;
-}
+} */
 
 .index_container::after {
   background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
+  width: 200px;
+  height: 140px;
   z-index: -1;
 }
 
-.index_container::before,
+/* .index_container::before, */
+
+.n9neLogo::after
 .index_container::after {
   content: "";
   left: 50%;
@@ -296,8 +307,8 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .n9neLogo path:nth-child(1){
-    fill: #F9F8F8;
+  .nav_menu {
+    display: none;
   }
 
   .logo {
