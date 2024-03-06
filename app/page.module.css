@@ -10,7 +10,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  position: sta;
+  position: fixed;
   align-items: center;
   font-size: 0.85rem;
   height: 96px;
@@ -174,10 +174,10 @@
   display: flex;
   border: 0 solid;
   border-radius: 12px;
-  background-color: #ffe500;
-  color: #000;
+  background-color: rgb(var(--foreground-rgb));
+  color: #000000;
   cursor: pointer;
-  transition: all 0.3s ease-in;
+  transition: all 0.1s ease-in;
   font-weight: 500;
   margin-block-start: 0.8em;
   margin-block-end: 0.8em;
@@ -186,7 +186,7 @@
 .consult_btn:hover {
   /* border-radius: 0px; */
   padding: 12px 24px;
-  color: #004444;
+  background-color: #FFE500;
   font-size: larger;
 }
 
