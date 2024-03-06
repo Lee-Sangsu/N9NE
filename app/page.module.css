@@ -50,7 +50,7 @@
   text-decoration: none;
   position: relative;
   margin: 0 16px;
-  padding: 1rem;
+  padding: 1rem 1.4rem;
   font-size: 1rem;
   letter-spacing: 1px;
   transition: all 0.5s ease-in-out;
@@ -64,7 +64,26 @@
   font-size: larger;
 }
 
+.star {
+  position: absolute;
+  left: var(--container-horizontal-padding);
+  top: 12dvh;
+}
 
+.rect {
+  position: absolute;
+  top: 18dvh;
+  right: 0;
+}
+
+.statement { 
+  display: flex;
+  width: var(--max-width);
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
@@ -111,6 +130,7 @@
   align-items: center;
   position: relative;
   padding-top: 40dvh;
+  text-align: center;
 }
 
 .index_container::before {
@@ -148,6 +168,8 @@
   cursor: pointer;
   transition: all 0.3s ease-in;
   font-weight: 500;
+  margin-block-start: 0.8em;
+  margin-block-end: 0.8em;
 }
 
 .consult_btn:hover {
@@ -184,7 +206,14 @@
     padding: 4rem;
   }
 
-  .header
+  .rect {
+    display: none;
+  }
+
+  .star {
+    width: 152px;
+    height: 152px;
+  }
 
   .grid {
     grid-template-columns: 1fr;
@@ -260,6 +289,9 @@
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
+  }
+  .rect {
+    display: none;
   }
 }
 
