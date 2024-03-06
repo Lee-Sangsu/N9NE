@@ -16,8 +16,9 @@
   height: 96px;
   padding: 24px var(--container-horizontal-padding);
   width: 100vw;
-  z-index: 2;
+  z-index: 5;
   font-family: var(--font-mono);
+  backdrop-filter: blur(4px);
 }
 
 .header a {
