@@ -14,7 +14,7 @@
   align-items: center;
   font-size: 0.85rem;
   height: 96px;
-  padding: 24px var(--container-horizontal-padding);
+  padding: 24px var(--container-horizontal-padding) 0 var(--container-horizontal-padding);
   width: 100vw;
   z-index: 5;
   font-family: var(--font-mono);
@@ -218,6 +218,11 @@
     padding: 4rem;
   }
 
+  .nav_menu {
+    display: none;
+  }
+
+
   .rect {
     display: none;
   }
@@ -308,10 +313,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .nav_menu {
-    display: none;
-  }
-
   .logo {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
