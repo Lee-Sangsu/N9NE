@@ -13,7 +13,7 @@
   position: fixed;
   align-items: center;
   font-size: 0.85rem;
-  height: 96px;
+  height: 80px;
   padding: 24px var(--container-horizontal-padding) 0 var(--container-horizontal-padding);
   width: 100vw;
   z-index: 5;
